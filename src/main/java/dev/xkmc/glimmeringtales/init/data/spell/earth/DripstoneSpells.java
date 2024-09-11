@@ -40,7 +40,7 @@ import java.util.Map;
 public class DripstoneSpells {
 
 	public static final NatureSpellBuilder BUILDER = GTRegistries.EARTH
-			.build(GlimmeringTales.loc("dripstone")).cost(40)
+			.build(GlimmeringTales.loc("dripstone")).focusAndCost(40, 160)
 			.damageCustom(e -> new DamageType(e, 0.1f),
 					"%s is pierced by stalagmite", "%s is pierced by %s's stalagmite",
 					DamageTypeTags.IS_PROJECTILE)

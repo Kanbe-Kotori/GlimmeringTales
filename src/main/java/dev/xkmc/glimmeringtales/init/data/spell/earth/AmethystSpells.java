@@ -41,7 +41,7 @@ import java.util.Map;
 public class AmethystSpells {
 
 	public static final NatureSpellBuilder BUILDER = GTRegistries.EARTH
-			.build(GlimmeringTales.loc("amethyst")).cost(40)
+			.build(GlimmeringTales.loc("amethyst")).focusAndCost(50, 200)
 			.damageCustom(msg -> new DamageType(msg, 0.1f),
 					"%s is pierced by amethyst shards",
 					"%s is pierced by %s with amethyst shards",

@@ -24,7 +24,7 @@ import java.util.List;
 public class ClaySpells {
 
 	public static final NatureSpellBuilder BUILDER = GTRegistries.EARTH
-			.build(GlimmeringTales.loc("clay")).cost(20)
+			.build(GlimmeringTales.loc("clay")).focusAndCost(60, 240)
 			.block(ClaySpells::gen, GTItems.RUNE_CLAY, RuneBlock::of,
 					(b, e) -> b.add(Blocks.CLAY, BlockSpell.of(e)),
 					(b, e) -> b.add(GTItems.CLAY_CARPET, BlockSpell.of(e))

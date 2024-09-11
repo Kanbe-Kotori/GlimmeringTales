@@ -42,7 +42,7 @@ import java.util.function.BiFunction;
 public class GravelSpells {
 
 	public static final NatureSpellBuilder BUILDER = GTRegistries.EARTH
-			.build(GlimmeringTales.loc("gravel")).cost(20)
+			.build(GlimmeringTales.loc("gravel")).focusAndCost(50, 150)
 			.damageCustom(s -> new DamageType(s, 0.1f),
 					"%s is scratched to death by flint", "%s is scratched to death by %s with flint",
 					DamageTypeTags.IS_PROJECTILE)

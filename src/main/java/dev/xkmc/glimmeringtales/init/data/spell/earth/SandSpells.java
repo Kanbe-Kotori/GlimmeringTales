@@ -40,7 +40,7 @@ import java.util.List;
 public class SandSpells {
 
 	public static final NatureSpellBuilder BUILDER = GTRegistries.EARTH
-			.build(GlimmeringTales.loc("sand")).cost(20)
+			.build(GlimmeringTales.loc("sand")).focusAndCost(60, 240)
 			.damageCustom(s -> new DamageType(s, 0.1f),
 					"%s is buried by sandstorm", "%s is buried by %s's sandstorm",
 					DamageTypeTags.IS_PROJECTILE)

@@ -28,7 +28,7 @@ import java.util.List;
 public class StoneBridge {
 
 	public static final NatureSpellBuilder BUILDER = GTRegistries.EARTH
-			.build(GlimmeringTales.loc("stone_bridge")).focusAndCost(20, 40)
+			.build(GlimmeringTales.loc("stone_bridge")).focusAndCost(80, 400)
 			.spell(ctx -> new SpellAction(gen(ctx), GTItems.STONE_BRIDGE.get(),
 					2000, SpellCastType.INSTANT, SpellTriggerType.HORIZONTAL_FACING)
 			).lang("Stone Bridge").desc(
