@@ -30,7 +30,7 @@ import java.util.List;
 public class VinesSpell {
 
 	public static final NatureSpellBuilder BUILDER = GTRegistries.LIFE
-			.build(GlimmeringTales.loc("vine")).cost(40)
+			.build(GlimmeringTales.loc("vine")).focusAndCost(30, 90)
 			.damageCustom(msg -> new DamageType(msg, 1f),
 					"%s is choked vines",
 					"%s is choked by %s with vines")

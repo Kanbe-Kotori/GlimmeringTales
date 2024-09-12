@@ -21,7 +21,7 @@ import java.util.List;
 
 public class FlowerSpell {
 	public static final NatureSpellBuilder BUILDER = GTRegistries.LIFE
-			.build(GlimmeringTales.loc("flower")).cost(40)
+			.build(GlimmeringTales.loc("flower")).focusAndCost(50, 250)
 			.block(FlowerSpell::flower, GTItems.RUNE_FLOWER, RuneBlock::offset,
 					(b, e) -> b.add(BlockTags.FLOWERS, BlockSpell.cost(e)))
 			.lang("Flower").desc(

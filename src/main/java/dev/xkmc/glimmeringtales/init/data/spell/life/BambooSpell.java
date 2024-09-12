@@ -24,7 +24,7 @@ import java.util.List;
 
 public class BambooSpell {
 	public static final NatureSpellBuilder BUILDER = GTRegistries.LIFE
-			.build(GlimmeringTales.loc("bamboo")).cost(20)
+			.build(GlimmeringTales.loc("bamboo")).focusAndCost(80, 400)
 			.block(BambooSpell::gen, GTItems.RUNE_BAMBOO, RuneBlock::offset,
 					(b, e) -> b.add(GTTagGen.BAMBOO, BlockSpell.of(e)))
 			.lang("Bamboo").desc(
